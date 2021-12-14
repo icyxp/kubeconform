@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/yannh/kubeconform/pkg/resource"
-	"github.com/yannh/kubeconform/pkg/validator"
+	"github.com/icyxp/kubeconform/pkg/resource"
+	"github.com/icyxp/kubeconform/pkg/validator"
 )
 
 func TestJSONWrite(t *testing.T) {

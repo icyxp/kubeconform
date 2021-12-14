@@ -19,17 +19,17 @@ save-image:
 	docker save --output kubeconform-image.tar kubeconform:${RELEASE_VERSION}
 
 push-image:
-	docker tag kubeconform:latest ghcr.io/yannh/kubeconform:${RELEASE_VERSION}
-	docker push ghcr.io/yannh/kubeconform:${RELEASE_VERSION}
+	docker tag kubeconform:latest ghcr.io/icyxp/kubeconform:${RELEASE_VERSION}
+	docker push ghcr.io/icyxp/kubeconform:${RELEASE_VERSION}
 
 build-static:
 	CGO_ENABLED=0 GOFLAGS=-mod=vendor GOOS=linux GOARCH=amd64 GO111MODULE=on go build -trimpath -tags=netgo -ldflags "-extldflags=\"-static\""  -a -o bin/ ./...
 
 docker-test:
-	docker run -t -v $$PWD:/go/src/github.com/yannh/kubeconform -w /go/src/github.com/yannh/kubeconform golang:1.14 make test
+	docker run -t -v $$PWD:/go/src/github.com/icyxp/kubeconform -w /go/src/github.com/icyxp/kubeconform golang:1.14 make test
 
 docker-build-static:
-	docker run -t -v $$PWD:/go/src/github.com/yannh/kubeconform -w /go/src/github.com/yannh/kubeconform golang:1.14 make build-static
+	docker run -t -v $$PWD:/go/src/github.com/icyxp/kubeconform -w /go/src/github.com/icyxp/kubeconform golang:1.14 make build-static
 
 build-bats:
 	docker build -t bats -f Dockerfile.bats .
@@ -39,4 +39,4 @@ docker-acceptance: build-bats
 	docker run --network none -t bats -p acceptance-nonetwork.bats
 
 release:
-	docker run -e GITHUB_TOKEN -t -v $$PWD:/go/src/github.com/yannh/kubeconform -w /go/src/github.com/yannh/kubeconform goreleaser/goreleaser:v0.138 goreleaser release --rm-dist
+	docker run -e GITHUB_TOKEN -t -v $$PWD:/go/src/github.com/icyxp/kubeconform -w /go/src/github.com/icyxp/kubeconform goreleaser/goreleaser:v0.138 goreleaser release --rm-dist

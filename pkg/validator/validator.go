@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/yannh/kubeconform/pkg/cache"
-	"github.com/yannh/kubeconform/pkg/registry"
-	"github.com/yannh/kubeconform/pkg/resource"
+	"github.com/icyxp/kubeconform/pkg/cache"
+	"github.com/icyxp/kubeconform/pkg/registry"
+	"github.com/icyxp/kubeconform/pkg/resource"
 
 	"github.com/xeipuuv/gojsonschema"
 	"sigs.k8s.io/yaml"
@@ -56,7 +56,7 @@ func New(schemaLocations []string, opts Opts) (Validator, error) {
 	// Default to our kubernetes-json-schema fork
 	// raw.githubusercontent.com is frontend by Fastly and very fast
 	if len(schemaLocations) == 0 {
-		schemaLocations = []string{"https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/{{ .NormalizedKubernetesVersion }}-standalone{{ .StrictSuffix }}/{{ .ResourceKind }}{{ .KindSuffix }}.json"}
+		schemaLocations = []string{"https://devops-public-1251949819.cos.ap-shanghai.myqcloud.com/kubernetes-json-schema/{{ .NormalizedKubernetesVersion }}-standalone{{ .StrictSuffix }}/{{ .ResourceKind }}{{ .KindSuffix }}.json"}
 	}
 
 	registries := []registry.Registry{}

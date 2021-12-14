@@ -3,8 +3,8 @@ package validator
 import (
 	"testing"
 
-	"github.com/yannh/kubeconform/pkg/registry"
-	"github.com/yannh/kubeconform/pkg/resource"
+	"github.com/icyxp/kubeconform/pkg/registry"
+	"github.com/icyxp/kubeconform/pkg/resource"
 
 	"github.com/xeipuuv/gojsonschema"
 )

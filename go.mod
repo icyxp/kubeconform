@@ -1,4 +1,4 @@
-module github.com/yannh/kubeconform
+module github.com/icyxp/kubeconform
 
 go 1.14
 

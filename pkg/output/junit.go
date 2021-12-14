@@ -10,9 +10,10 @@ import (
 	"bufio"
 	"encoding/xml"
 	"fmt"
-	"github.com/yannh/kubeconform/pkg/validator"
 	"io"
 	"time"
+
+	"github.com/icyxp/kubeconform/pkg/validator"
 )
 
 type TestSuiteCollection struct {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/yannh/kubeconform/pkg/validator"
+	"github.com/icyxp/kubeconform/pkg/validator"
 )
 
 type Output interface {
