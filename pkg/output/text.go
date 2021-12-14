@@ -5,7 +5,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/yannh/kubeconform/pkg/validator"
+	"github.com/icyxp/kubeconform/pkg/validator"
 )
 
 type texto struct {

@@ -4,9 +4,10 @@ package main
 // considered stable
 
 import (
-	"github.com/yannh/kubeconform/pkg/validator"
 	"log"
 	"os"
+
+	"github.com/icyxp/kubeconform/pkg/validator"
 )
 
 func main() {

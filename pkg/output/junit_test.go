@@ -5,9 +5,9 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/yannh/kubeconform/pkg/resource"
+	"github.com/icyxp/kubeconform/pkg/resource"
 
-	"github.com/yannh/kubeconform/pkg/validator"
+	"github.com/icyxp/kubeconform/pkg/validator"
 )
 
 func TestJunitWrite(t *testing.T) {

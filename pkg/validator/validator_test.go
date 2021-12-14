@@ -1,10 +1,11 @@
 package validator
 
 import (
-	"github.com/yannh/kubeconform/pkg/registry"
 	"testing"
 
-	"github.com/yannh/kubeconform/pkg/resource"
+	"github.com/icyxp/kubeconform/pkg/registry"
+
+	"github.com/icyxp/kubeconform/pkg/resource"
 )
 
 type mockRegistry struct {

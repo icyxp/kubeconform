@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/yannh/kubeconform/pkg/cache"
-	"github.com/yannh/kubeconform/pkg/registry"
-	"github.com/yannh/kubeconform/pkg/resource"
+	"github.com/icyxp/kubeconform/pkg/cache"
+	"github.com/icyxp/kubeconform/pkg/registry"
+	"github.com/icyxp/kubeconform/pkg/resource"
 
 	"github.com/xeipuuv/gojsonschema"
 	"sigs.k8s.io/yaml"

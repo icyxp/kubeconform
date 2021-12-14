@@ -9,10 +9,10 @@ import (
 	"runtime/pprof"
 	"sync"
 
-	"github.com/yannh/kubeconform/pkg/config"
-	"github.com/yannh/kubeconform/pkg/output"
-	"github.com/yannh/kubeconform/pkg/resource"
-	"github.com/yannh/kubeconform/pkg/validator"
+	"github.com/icyxp/kubeconform/pkg/config"
+	"github.com/icyxp/kubeconform/pkg/output"
+	"github.com/icyxp/kubeconform/pkg/resource"
+	"github.com/icyxp/kubeconform/pkg/validator"
 )
 
 var version = "development"

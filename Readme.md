@@ -1,9 +1,9 @@
 # Kubeconform
 
-[![Build status](https://github.com/yannh/kubeconform/workflows/build/badge.svg?branch=master)](https://github.com/yannh/kubeconform/actions?query=branch%3Amaster)
+[![Build status](https://github.com/icyxp/kubeconform/workflows/build/badge.svg?branch=master)](https://github.com/icyxp/kubeconform/actions?query=branch%3Amaster)
 [![Homebrew](https://img.shields.io/badge/dynamic/json.svg?url=https://formulae.brew.sh/api/formula/kubeconform.json&query=$.versions.stable&label=homebrew)](https://formulae.brew.sh/formula/kubeconform)
-[![Go Report card](https://goreportcard.com/badge/github.com/yannh/kubeconform)](https://goreportcard.com/report/github.com/yannh/kubeconform)
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/yannh/kubeconform/pkg/validator)](https://pkg.go.dev/github.com/yannh/kubeconform/pkg/validator)
+[![Go Report card](https://goreportcard.com/badge/github.com/icyxp/kubeconform)](https://goreportcard.com/report/github.com/icyxp/kubeconform)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/icyxp/kubeconform/pkg/validator)](https://pkg.go.dev/github.com/icyxp/kubeconform/pkg/validator)
 
 Kubeconform is a Kubernetes manifests validation tool. Build it into your CI to validate your Kubernetes
 configuration!
@@ -14,7 +14,7 @@ It is inspired by, contains code from and is designed to stay close to
    downloaded files in memory
  * configurable list of **remote, or local schemas locations**, enabling validating Kubernetes
    custom resources (CRDs) and offline validation capabilities
- * uses by default a [self-updating fork](https://github.com/yannh/kubernetes-json-schema) of the schemas registry maintained
+ * uses by default a [self-updating fork](https://github.com/icyxp/kubernetes-json-schema) of the schemas registry maintained
    by the [kubernetes-json-schema](https://github.com/instrumenta/kubernetes-json-schema) project - which guarantees
    up-to-date **schemas for all recent versions of Kubernetes**.
 
@@ -54,7 +54,7 @@ If you are a [Homebrew](https://brew.sh/) user, you can install by running:
 $ brew install kubeconform
 ```
 
-You can also download the latest version from the [release page](https://github.com/yannh/kubeconform/releases).
+You can also download the latest version from the [release page](https://github.com/icyxp/kubeconform/releases).
 
 ### Usage
 
@@ -269,7 +269,7 @@ sys	0m1,069s
 Kubeconform contains a package that can be used as a library.
 An example of usage can be found in [examples/main.go](examples/main.go)
 
-Additional documentation on [pkg.go.dev](https://pkg.go.dev/github.com/yannh/kubeconform/pkg/validator)
+Additional documentation on [pkg.go.dev](https://pkg.go.dev/github.com/icyxp/kubeconform/pkg/validator)
 
 ### Credits
 
